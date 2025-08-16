@@ -1,7 +1,8 @@
 # Raspberry-pi-cluster
 
 ## Introduction
-This repository documents my bachelor's project—the creation and configuration of a cluster from Raspberry Pi 5.
+This repository documents my bachelor's project, which involved creating and configuring a cluster using Raspberry Pi 5.
+Raspberry Pi is a popular platform for development and experimentation thanks to its low price, low power consumption, and broad community support. Creating a Raspberry Pi-based cluster allows you to simulate distributed systems, test parallel computations, or run applications in a multi-node environment. The goal of this work is to design, implement, and test a Raspberry Pi-based cluster capable of running distributed computing tasks and to evaluate its performance and potential uses.
 
 ## Architecture and hardware
 
@@ -16,8 +17,6 @@ Our cluster has a simple topology with one master node and three workers.
 * **Worker (RP2):** `192.168.1.103`
 * **Worker (RP3):** `192.168.1.105`
 * **Worker (RP4):** `192.168.1.107`
-
-
 
 <img width="750" height="455" alt="image" src="https://github.com/user-attachments/assets/7d3e3345-ee39-45c5-8654-16f36c1b6602" />
 
