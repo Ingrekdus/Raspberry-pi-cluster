@@ -22,3 +22,7 @@ Our cluster has a simple topology with one master node and three workers.
 
 <img width="1910" height="782" alt="image" src="https://github.com/user-attachments/assets/be933ad1-dc41-4259-9882-cd7fd34b504b" />
 
+### Grafana and Prometheus
+Open a browser and go to your_ip:grana_port for me: 192.168.1.111:3000
+connections -> Data Sources -> click on Prometheus -> into connection URL paste your Prometheus URL, for me: http://192.168.1.111:9090 -> Save and test
+Dashboards -> + Create dashboards -> import dashboards -> paste 1860 -> load -> select Prometheus -> Import
