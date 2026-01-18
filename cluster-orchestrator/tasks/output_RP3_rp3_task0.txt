@@ -1,0 +1,2 @@
+✅ Docker task started on 5fb75b21b954
+🔢 Výsledek výpočtu: 42

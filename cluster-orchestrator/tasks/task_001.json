@@ -1,0 +1,5 @@
+{
+  "id": "task_001",
+  "type": "command",
+  "command": "echo Hello from RP worker"
+}

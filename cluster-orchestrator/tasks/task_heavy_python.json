@@ -1,0 +1,6 @@
+{
+  "name": "heavy_task",
+  "dockerfile_path": "docker/heavy_task",
+  "script_inside_container": "main.py",
+  "num_workers": 3
+}

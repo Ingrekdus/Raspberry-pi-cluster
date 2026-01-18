@@ -1,0 +1,15 @@
+2025-08-03 17:32:29,765 INFO: Building Docker image heavy_task_image from .
+2025-08-03 17:32:30,038 INFO: Docker image heavy_task_image built successfully
+2025-08-03 17:32:30,038 INFO: Running task in docker with payload: data1
+2025-08-03 17:32:30,039 INFO: Running task in docker with payload: data2
+2025-08-03 17:32:30,039 INFO: Running task in docker with payload: data3
+2025-08-03 17:32:30,041 INFO: Running task in docker with payload: data4
+2025-08-03 17:32:30,785 ERROR: Task failed: docker: Error response from daemon: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: exec: "data2": executable file not found in $PATH: unknown.
+2025-08-03 17:32:30,785 INFO: Task finished with exit code 127
+2025-08-03 17:32:30,910 ERROR: Task failed: docker: Error response from daemon: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: exec: "data3": executable file not found in $PATH: unknown.
+2025-08-03 17:32:30,910 INFO: Task finished with exit code 127
+2025-08-03 17:32:30,938 ERROR: Task failed: docker: Error response from daemon: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: exec: "data4": executable file not found in $PATH: unknown.
+2025-08-03 17:32:30,939 INFO: Task finished with exit code 127
+2025-08-03 17:32:31,080 ERROR: Task failed: docker: Error response from daemon: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: exec: "data1": executable file not found in $PATH: unknown.
+2025-08-03 17:32:31,080 INFO: Task finished with exit code 127
+2025-08-03 17:32:31,080 INFO: All tasks completed in 1.31 seconds

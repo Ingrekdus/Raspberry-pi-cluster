@@ -1,0 +1,2 @@
+Spouštím úlohu na raspberrypi
+Výpočet: 42
