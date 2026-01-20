@@ -28,3 +28,52 @@ Our cluster has a simple topology with one master node and three workers.
 * Dashboards -> + Create dashboards -> import dashboards -> paste 1860 -> load -> select Prometheus -> Import
 
 <img width="1910" height="931" alt="image" src="https://github.com/user-attachments/assets/b482e91e-8b64-4a02-ab6d-554bb343eb94" />
+
+
+
+2. The "Ultimate Guide"
+3. 
+Markdown
+# Raspberry Pi 5 Supercomputer Cluster
+
+Build your own high-performance computing (HPC) cluster using Raspberry Pi 5 and Docker Swarm. This project provides a ready-to-use environment for parallel computing and image processing.
+
+## Prerequisites
+1. **Hardware:** 2 or more Raspberry Pi 5 boards (recommended 8GB RAM).
+2. **OS:** Raspberry Pi OS Lite (64-bit) installed on all nodes.
+3. **Network:** All nodes must be on the same local network with static IPs.
+
+## Quick Start Guide (5 Minutes)
+
+### Step 1: Install Docker (All Nodes)
+Log in to each Pi and run the installation script provided in this repo:
+```bash
+curl -sSL [https://raw.githubusercontent.com/YOUR_USERNAME/pi-cluster-optimization/main/infra/setup/install_docker.sh](https://raw.githubusercontent.com/YOUR_USERNAME/pi-cluster-optimization/main/infra/setup/install_docker.sh) | sh
+Step 2: Initialize the Cluster (Master Only)
+On your primary node (RP1), run:
+
+Bash
+docker swarm init --advertise-addr <YOUR_MASTER_IP>
+Copy the command that appears (starting with docker swarm join) and run it on all other nodes (RP2, RP3, etc.).
+
+Step 3: Deploy Your First App (Master Only)
+Download the project and launch the Pi estimation task:
+
+Bash
+git clone [https://github.com/YOUR_USERNAME/pi-cluster-optimization.git](https://github.com/YOUR_USERNAME/pi-cluster-optimization.git)
+cd pi-cluster-optimization/apps/pi-estimation
+
+# Build the image on ALL nodes (or use a registry)
+docker build -t pi-cluster-image .
+
+# Deploy to the cluster
+docker stack deploy -c docker-compose.yml pi_calc
+Monitoring & Results
+Check the status of your tasks:
+
+Bash
+docker service ps pi_calc_pi-worker
+View the parallel output:
+
+Bash
+docker service logs -f pi_calc_pi-worker
