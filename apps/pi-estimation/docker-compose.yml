@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  pi-worker:
+    image: pi-cluster-image
+    deploy:
+      replicas: 4
+      placement:
+        max_replicas_per_node: 1
+      restart_policy:
+        condition: on-failure
