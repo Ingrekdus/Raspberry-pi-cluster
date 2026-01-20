@@ -31,9 +31,9 @@ Our cluster has a simple topology with one master node and three workers.
 
 
 
-2. The "Ultimate Guide"
-3. 
-Markdown
+
+
+
 # Raspberry Pi 5 Supercomputer Cluster
 
 Build your own high-performance computing (HPC) cluster using Raspberry Pi 5 and Docker Swarm. This project provides a ready-to-use environment for parallel computing and image processing.
