@@ -13,10 +13,10 @@ Raspberry Pi is a popular platform for development and experimentation thanks to
 
 ### Topologie sítě a IP adresy
 Our cluster has a simple topology with one master node and three workers.
-* **Master (RP1):** `192.168.1.111`
-* **Worker (RP2):** `192.168.1.103`
-* **Worker (RP3):** `192.168.1.105`
-* **Worker (RP4):** `192.168.1.107`
+* **Master (RP1):** `192.168.1.xxx`
+* **Worker (RP2):** `192.168.1.xxx`
+* **Worker (RP3):** `192.168.1.xxx`
+* **Worker (RP4):** `192.168.1.xxx`
 
 <img width="750" height="455" alt="image" src="https://github.com/user-attachments/assets/7d3e3345-ee39-45c5-8654-16f36c1b6602" />
 
