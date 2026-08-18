@@ -36,7 +36,7 @@ Všechny komponenty běží v `docker-compose` (ne v Swarm) s `network_mode: hos
 │                  │  │                  │  │                  │
 │ cAdvisor :8080   │  │ cAdvisor :8080   │  │ cAdvisor :8080   │
 └──────────────────┘  └──────────────────┘  └──────────────────┘
-  192.168.1.103        192.168.1.105        192.168.1.107
+  192.168.1.xxx        192.168.1.xxx        192.168.1.xxx
 ```
 
 ---
@@ -47,7 +47,7 @@ Všechny komponenty běží v `docker-compose` (ne v Swarm) s `network_mode: hos
 
 - Docker a Docker Compose na všech 4 nodech
 - SSH přístup k RP1–RP4
-- LAN IP adresy nakonfigurované (viz [02_KONFIGURACE.md](./02_KONFIGURACE.md))
+- LAN IP adresy nakonfigurované
   - RP1 = `<RP1_IP>` (Manager)
   - RP2 = `<RP2_IP>` (Worker)
   - RP3 = `<RP3_IP>` (Worker)
